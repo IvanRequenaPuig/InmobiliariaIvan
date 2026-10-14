@@ -1,0 +1,152 @@
+
+.hero-servicios {
+  background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 60%),
+    url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1800&q=70');
+}
+
+.svc-wrap {
+  background: var(--bg);
+  padding: 1rem 0 5rem;
+}
+
+/* Índice lateral */
+.svc-index {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 2px solid var(--line);
+  position: sticky;
+  top: 100px;
+}
+
+.svc-index a {
+  display: block;
+  padding: .55rem 1rem;
+  margin-left: -2px;
+  border-left: 3px solid transparent;
+  color: #5b6472;
+  font-size: .92rem;
+  line-height: 1.35;
+}
+
+.svc-index a:hover {
+  color: var(--blue);
+}
+
+.svc-index a.active {
+  color: var(--blue);
+  font-weight: 600;
+  border-left-color: var(--blue);
+  background: linear-gradient(90deg, var(--blue-soft), transparent);
+}
+
+@media (max-width: 991px) {
+  .svc-index {
+    position: static;
+    display: flex;
+    gap: .5rem;
+    overflow-x: auto;
+    border: 0;
+    padding-bottom: .5rem;
+  }
+
+  .svc-index a {
+    white-space: nowrap;
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    margin: 0;
+    background: #fff;
+    padding: .4rem 1rem;
+  }
+
+  .svc-index a.active {
+    background: var(--blue);
+    color: #fff;
+    border-color: var(--blue);
+  }
+}
+
+/* Cada servicio */
+.svc {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 1.6rem;
+  padding: 2.4rem 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 100px;
+}
+
+.svc:first-child {
+  padding-top: 0;
+}
+
+.svc:last-child {
+  border-bottom: 0;
+}
+
+.svc-icon {
+  width: 76px;
+  height: 76px;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  color: var(--blue);
+  background: #cfe3f5;
+  border: 2px dashed #6d9bd0;
+  border-radius: 50%;
+}
+
+.svc h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--blue);
+  margin-bottom: .6rem;
+}
+
+.svc p {
+  max-width: 68ch;
+}
+
+.svc ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1.3rem;
+  display: grid;
+  gap: .45rem;
+}
+
+.svc li {
+  display: flex;
+  gap: .6rem;
+  align-items: baseline;
+  max-width: 68ch;
+}
+
+.svc li i {
+  color: var(--teal);
+}
+
+@media (max-width: 575px) {
+  .svc {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Banda final */
+.svc-cta {
+  background: linear-gradient(120deg, var(--blue-dark), var(--blue));
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.svc-cta h2 {
+  font-weight: 600;
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+}
+
+.svc-cta p {
+  opacity: .9;
+  margin-bottom: 1.6rem;
+}

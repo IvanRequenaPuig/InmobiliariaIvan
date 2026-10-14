@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inmobiliaria Requena | Compra, venta y alquiler en Requena</title>
+  <meta name="description" content="Inmobiliaria Requena: compramos, vendemos y alquilamos tu casa como si fuera nuestra. Pisos, chalets, fincas y locales en Requena.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+
+  <div id="site-header"></div>
+
+  <header class="hero" id="inicio">
+    <div class="hero-slides" aria-hidden="true">
+      <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=1800&q=70')" data-bg="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&amp;fit=crop&amp;w=1800&amp;q=70"></div>
+      <div class="hero-slide" data-bg="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&amp;fit=crop&amp;w=1800&amp;q=70"></div>
+      <div class="hero-slide" data-bg="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&amp;fit=crop&amp;w=1800&amp;q=70"></div>
+      <div class="hero-slide" data-bg="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=1800&amp;q=70"></div>
+      <div class="hero-slide" data-bg="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&amp;fit=crop&amp;w=1800&amp;q=70"></div>
+      <div class="hero-slide" data-bg="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&amp;fit=crop&amp;w=1800&amp;q=70"></div>
+    </div>
+    <div class="hero-dots" id="heroDots" role="group" aria-label="Elegir fondo de portada"></div>
+
+    <div class="container hero-content">
+      <h1 class="hero-title" data-reveal="up">Somos tu <strong>Inmobiliaria en Requena</strong> desde 1998</h1>
+      <h2 class="hero-sub" data-reveal="up" data-delay="150">Compramos, vendemos y alquilamos tu casa como si fuera nuestra</h2>
+      <p class="hero-claim" data-reveal="up" data-delay="300">“SOMOS TÚ”</p>
+    </div>
+
+    <div class="container search-wrap" data-reveal="up" data-delay="450">
+      <form class="search-box" id="heroSearch" autocomplete="off">
+        <ul class="nav nav-pills search-tabs" id="heroOp">
+          <li class="nav-item"><button type="button" class="nav-link active" data-op="venta">Comprar</button></li>
+          <li class="nav-item"><button type="button" class="nav-link" data-op="alquiler">Alquilar</button></li>
+        </ul>
+        <div class="row g-2">
+          <div class="col-md-4">
+            <select class="form-select" id="heroPoblacion" aria-label="Población"><option value="">Población</option></select>
+          </div>
+          <div class="col-md-4">
+            <select class="form-select" id="heroZona" aria-label="Zona"><option value="">Zona</option></select>
+          </div>
+          <div class="col-md-4">
+            <select class="form-select" id="heroTipo" aria-label="Tipo"><option value="">Tipo</option></select>
+          </div>
+          <div class="col-6 col-md-3"><input type="number" min="0" class="form-control" id="heroDesde" placeholder="Desde €"></div>
+          <div class="col-6 col-md-3"><input type="number" min="0" class="form-control" id="heroHasta" placeholder="Hasta €"></div>
+          <div class="col-md-3"><input type="text" class="form-control" id="heroRef" placeholder="Ref"></div>
+          <div class="col-md-3 d-grid"><button type="submit" class="btn btn-brand">Buscar</button></div>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <section class="section about" id="nosotros">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="blob-img" data-reveal="left">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=70" alt="Oficina de Inmobiliaria Requena" loading="lazy">
+          </div>
+        </div>
+        <div class="col-lg-6" data-reveal="right">
+          <h2 class="title-blue">Inmobiliaria Requena,<br>tu inmobiliaria de confianza</h2>
+          <p>Somos una <strong>inmobiliaria</strong> con amplia experiencia y una sólida presencia en el <strong>mercado inmobiliario de Requena</strong>. Ponemos a tu disposición una <strong>extensa cartera de inmuebles en Requena</strong>, que incluye pisos, chalets, apartamentos, fincas, locales comerciales y todo tipo de viviendas adaptadas a tus necesidades.</p>
+          <p>Nuestro <strong>equipo de expertos inmobiliarios en Requena</strong> te ofrece un asesoramiento profesional y personalizado en cada operación, ya sea para <strong>comprar, vender o alquilar una vivienda en Requena</strong>. Confía en nosotros para encontrar la propiedad ideal o gestionar tu inversión con total garantía.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section advantages" id="servicios">
+    <div class="container position-relative">
+      <h2 class="title-blue mb-5" data-reveal="up">Ventajas de elegir nuestra inmobiliaria en Requena</h2>
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="adv-list">
+            <article class="adv-item" data-reveal="up" data-delay="0">
+              <div class="adv-icon"><i class="bi bi-people-fill"></i></div>
+              <div>
+                <h3>Asesoramiento inmobiliario integrado</h3>
+                <p>En nuestra <strong>inmobiliaria en Requena</strong> nos enfocamos en la satisfacción del cliente, ofreciendo un <strong>servicio inmobiliario personalizado</strong> y de máxima transparencia en cada gestión. Ya sea que quieras comprar una vivienda en Requena, vender tu propiedad o alquilar un piso, te acompañamos en todo el proceso con cercanía, confianza y resultados efectivos.</p>
+              </div>
+            </article>
+            <article class="adv-item" data-reveal="up" data-delay="150">
+              <div class="adv-icon"><i class="bi bi-buildings-fill"></i></div>
+              <div>
+                <h3>Amplia oferta inmobiliaria</h3>
+                <p>Disponemos de una <strong>amplia oferta de propiedades en Requena</strong>, adaptadas a todo tipo de necesidades. Desde <strong>pisos, chalets, oficinas, bungalows</strong> hasta <strong>fincas rústicas</strong> y mucho más. Todas nuestras viviendas y locales cuentan con las <strong>mejores garantías del mercado inmobiliario</strong>, asegurando confianza y tranquilidad en cada operación.</p>
+              </div>
+            </article>
+            <article class="adv-item" data-reveal="up" data-delay="300">
+              <div class="adv-icon"><i class="bi bi-bar-chart-line-fill"></i></div>
+              <div>
+                <h3>Con los mejores expertos</h3>
+                <p>Contamos con un <strong>equipo profesional inmobiliario</strong> con más de <strong>25 años de experiencia en el sector inmobiliario en Requena</strong>. Nuestros expertos están a tu disposición en cada fase del proceso, ofreciendo asesoramiento personalizado y las mejores soluciones para <strong>comprar, vender o alquilar tu vivienda en Requena</strong>.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="adv-photo" data-reveal="right" data-delay="200">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=70" alt="Asesora inmobiliaria atendiendo a clientes" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section featured" id="promociones">
+    <div class="container">
+      <h2 class="title-dark text-center mb-5" data-reveal="up">Propiedades destacadas</h2>
+      <div class="row g-4" id="featuredGrid"></div>
+      <div class="text-center mt-5">
+        <a href="#propiedades" class="btn btn-teal">Ver más propiedades</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sell" id="vender" aria-labelledby="sellTitle">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-7" data-reveal="left">
+          <h2 class="sell-title" id="sellTitle">¿Quieres vender o alquilar tu propiedad?</h2>
+        </div>
+        <div class="col-lg-5 col-xl-4 offset-xl-1" data-reveal="right">
+          <form class="sell-form" id="sellForm" novalidate>
+            <div class="mb-2">
+              <label class="visually-hidden" for="slDonde">¿Dónde está tu propiedad?</label>
+              <input type="text" class="form-control" id="slDonde" placeholder="¿Dónde está tu propiedad?" autocomplete="off">
+              <div class="invalid-feedback">Indícanos la población o la dirección.</div>
+            </div>
+            <div class="mb-2">
+              <label class="visually-hidden" for="slEmail">Correo electrónico</label>
+              <input type="email" class="form-control" id="slEmail" placeholder="Correo electrónico" autocomplete="email">
+              <div class="invalid-feedback">Introduce un correo electrónico válido.</div>
+            </div>
+            <div class="mb-3">
+              <label class="visually-hidden" for="slTel">Teléfono</label>
+              <input type="tel" class="form-control" id="slTel" placeholder="Teléfono" autocomplete="tel">
+              <div class="invalid-feedback">Introduce un teléfono válido (9 cifras).</div>
+            </div>
+
+            <fieldset class="mb-3">
+              <legend class="visually-hidden">Cómo prefieres que te contactemos</legend>
+              <label class="sell-radio" for="slLlamar"><input class="form-check-input" type="radio" name="slContacto" id="slLlamar" value="llamada"><span>Quiero que me llaméis</span></label>
+              <label class="sell-radio" for="slMail"><input class="form-check-input" type="radio" name="slContacto" id="slMail" value="email"><span>Prefiero contacto por mail</span></label>
+              <div class="sell-error" id="slContactoError">Elige cómo quieres que te contactemos.</div>
+            </fieldset>
+
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="slPriv">
+              <label class="form-check-label" for="slPriv">Acepto la <a href="#">Política de privacidad</a></label>
+              <div class="invalid-feedback">Debes aceptar la política de privacidad.</div>
+            </div>
+
+            <div class="sell-hp" aria-hidden="true"><label>No rellenar <input type="text" id="slWeb" tabindex="-1" autocomplete="off"></label></div>
+
+            <div class="sell-captcha mb-3">
+              <label for="slCaptcha" id="slCaptchaQ"></label>
+              <input type="text" class="form-control" id="slCaptcha" inputmode="numeric" autocomplete="off">
+              <div class="invalid-feedback">La respuesta no es correcta.</div>
+            </div>
+
+            <button type="submit" class="btn btn-brand w-100">ENVIAR</button>
+            <div class="alert alert-success d-none mt-3 mb-0" id="slOk" role="status">¡Gracias! Hemos recibido tus datos y te responderemos en menos de 24 horas.</div>
+          </form>
+
+          <aside class="sell-contact">
+            <h3>Contacta, te responderemos en menos de 24 horas</h3>
+            <p class="mb-1">O si lo prefieres llámanos a los teléfonos</p>
+            <p class="mb-0"><a href="tel:+34900000000">(+34) 900 000 000</a> o a <a href="tel:+34600000000">(+34) 600 000 000</a> – <a href="tel:+34600000001">(+34) 600 000 001</a></p>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="listing" id="propiedades">
+    <div class="listing-banner"></div>
+    <div class="container">
+
+      <div class="row g-4">
+        <aside class="col-lg-3">
+          <button class="btn btn-brand w-100 d-lg-none mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#filtersPanel" aria-expanded="false" aria-controls="filtersPanel">
+            <i class="bi bi-sliders"></i> Filtros
+          </button>
+          <div class="collapse d-lg-block" id="filtersPanel">
+            <form class="filters" id="filtersForm" autocomplete="off">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h3 class="filters-title">Filtrar</h3>
+                <button type="button" class="btn btn-link p-0" id="resetFilters">Borrar filtros</button>
+              </div>
+
+              <div class="btn-group w-100 mb-3" role="group" aria-label="Operación" id="opGroup">
+                <input type="radio" class="btn-check" name="op" id="opTodas" value="" checked>
+                <label class="btn btn-outline-brand" for="opTodas">Todas</label>
+                <input type="radio" class="btn-check" name="op" id="opVenta" value="venta">
+                <label class="btn btn-outline-brand" for="opVenta">Comprar</label>
+                <input type="radio" class="btn-check" name="op" id="opAlq" value="alquiler">
+                <label class="btn btn-outline-brand" for="opAlq">Alquilar</label>
+              </div>
+
+              <label class="form-label" for="fTipo">Tipo de vivienda</label>
+              <select class="form-select mb-3" id="fTipo"><option value="">Todos</option></select>
+
+              <label class="form-label" for="fPoblacion">Población</label>
+              <select class="form-select mb-3" id="fPoblacion"><option value="">Todas</option></select>
+
+              <label class="form-label" for="fZona">Zona</label>
+              <select class="form-select mb-3" id="fZona"><option value="">Todas</option></select>
+
+              <label class="form-label">Precio (€)</label>
+              <div class="row g-2 mb-3">
+                <div class="col-6"><input type="number" min="0" class="form-control" id="fDesde" placeholder="Desde"></div>
+                <div class="col-6"><input type="number" min="0" class="form-control" id="fHasta" placeholder="Hasta"></div>
+              </div>
+
+              <label class="form-label">Habitaciones</label>
+              <div class="chips mb-3" id="chipsBeds" data-chips="beds">
+                <button type="button" class="chip active" data-val="0">Todas</button>
+                <button type="button" class="chip" data-val="1">1+</button>
+                <button type="button" class="chip" data-val="2">2+</button>
+                <button type="button" class="chip" data-val="3">3+</button>
+                <button type="button" class="chip" data-val="4">4+</button>
+              </div>
+
+              <label class="form-label">Baños</label>
+              <div class="chips mb-3" id="chipsBaths" data-chips="baths">
+                <button type="button" class="chip active" data-val="0">Todos</button>
+                <button type="button" class="chip" data-val="1">1+</button>
+                <button type="button" class="chip" data-val="2">2+</button>
+                <button type="button" class="chip" data-val="3">3+</button>
+              </div>
+
+              <label class="form-label">Superficie mínima (m²)</label>
+              <input type="number" min="0" class="form-control mb-3" id="fM2" placeholder="Ej. 80">
+
+              <label class="form-label" for="fRef">Referencia</label>
+              <input type="text" class="form-control mb-3" id="fRef" placeholder="MRG2114">
+
+              <h4 class="filters-sub">Características</h4>
+              <div id="featuresBox" class="features-box"></div>
+
+              <button type="button" class="btn btn-brand w-100 mt-3 d-lg-none" data-bs-toggle="collapse" data-bs-target="#filtersPanel">Ver resultados</button>
+            </form>
+          </div>
+        </aside>
+
+        <!-- Resultados -->
+        <div class="col-lg-9">
+          <div class="results-head">
+            <h2 class="results-count"><span id="resultsCount">0</span> propiedades</h2>
+            <div class="d-flex align-items-center gap-2">
+              <label for="fOrden" class="order-label">Ordenar por</label>
+              <select class="form-select w-auto" id="fOrden">
+                <option value="fecha-desc">Fecha – más recientes</option>
+                <option value="precio-asc">Precio – menor a mayor</option>
+                <option value="precio-desc">Precio – mayor a menor</option>
+                <option value="m2-desc">Superficie – mayor a menor</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="activeTags" class="active-tags"></div>
+          <div class="row g-4" id="resultsGrid"></div>
+
+          <div id="emptyState" class="empty-state d-none">
+            <i class="bi bi-house-slash"></i>
+            <h3>No hay propiedades con esos filtros</h3>
+            <p>Prueba a quitar alguna característica o ampliar el rango de precio.</p>
+            <button class="btn btn-brand" id="emptyReset">Borrar filtros</button>
+          </div>
+
+          <div class="text-center mt-5">
+            <button class="btn btn-teal" id="loadMore">Ver más propiedades</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reviews" id="opiniones" aria-labelledby="reviewsTitle">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-3" data-reveal="left">
+          <h2 class="reviews-title" id="reviewsTitle">Lo que opinan nuestros clientes</h2>
+          <div class="reviews-score">
+            <span class="score-num" id="reviewsAvg">0,0</span>
+            <div>
+              <div class="stars" id="reviewsStars" aria-hidden="true"></div>
+              <small id="reviewsCount"></small>
+            </div>
+          </div>
+          <div class="reviews-nav">
+            <button type="button" id="revPrev" aria-label="Opiniones anteriores"><i class="bi bi-arrow-left"></i></button>
+            <button type="button" id="revNext" aria-label="Opiniones siguientes"><i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="col-lg-9" data-reveal="right">
+          <div class="reviews-track" id="reviewsTrack" role="region" aria-label="Opiniones de clientes" tabindex="0"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contacto">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5" data-reveal="left">
+          <h2 class="title-blue">¿Hablamos?</h2>
+          <p>Cuéntanos qué buscas o qué quieres vender y te llamamos en menos de 24 horas laborables.</p>
+          <ul class="contact-list">
+            <li><i class="bi bi-geo-alt-fill"></i> Calle Ejemplo, 1 · 46340 Requena (Valencia)</li>
+            <li><i class="bi bi-telephone-fill"></i> 900 000 000</li>
+            <li><i class="bi bi-envelope-fill"></i> info@inmobiliariarequena.es</li>
+            <li><i class="bi bi-clock-fill"></i> L-V 10 a 19 horas</li>
+          </ul>
+        </div>
+        <div class="col-lg-7" data-reveal="right">
+          <form class="contact-form needs-validation" id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="cNombre">Nombre</label>
+                <input type="text" class="form-control" id="cNombre" required>
+                <div class="invalid-feedback">Escribe tu nombre.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="cTel">Teléfono</label>
+                <input type="tel" class="form-control" id="cTel" required pattern="[0-9 +]{9,15}">
+                <div class="invalid-feedback">Introduce un teléfono válido.</div>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="cEmail">Email</label>
+                <input type="email" class="form-control" id="cEmail" required>
+                <div class="invalid-feedback">Introduce un email válido.</div>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="cMsg">Mensaje</label>
+                <textarea class="form-control" id="cMsg" rows="4" required></textarea>
+                <div class="invalid-feedback">Cuéntanos en qué podemos ayudarte.</div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="cPriv" required>
+                  <label class="form-check-label" for="cPriv">Acepto la política de privacidad</label>
+                  <div class="invalid-feedback">Debes aceptar la política de privacidad.</div>
+                </div>
+              </div>
+              <div class="col-12"><button type="submit" class="btn btn-brand">Enviar mensaje</button></div>
+              <div class="col-12"><div class="alert alert-success d-none mb-0" id="contactOk" role="status">¡Gracias! Hemos recibido tu mensaje y te contactaremos pronto.</div></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/propiedades.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

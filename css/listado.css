@@ -1,0 +1,351 @@
+/* listado.css - estilos de las páginas Propiedades en Venta / Alquiler.
+   Las tarjetas (.prop-card...) están en styles.css */
+
+/* ===== Cabecera con foto ===== */
+.list-hero {
+   height: 340px;
+   background-color: #9fbfd4;
+   background-size: cover;
+   background-position: center;
+}
+
+.hero-alquiler {
+   background-image: linear-gradient(180deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, 0) 60%), url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1800&q=70');
+}
+
+.hero-venta {
+   background-image: linear-gradient(180deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, 0) 60%), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1800&q=70');
+}
+
+/* ===== Buscador ===== */
+.list-search-wrap {
+   position: relative;
+   z-index: 3;
+   margin-top: -42px;
+}
+
+.list-search {
+   max-width: 1010px;
+   margin: 0 auto;
+   background: #fff;
+   padding: 1.1rem 1.1rem .8rem;
+   box-shadow: 0 12px 40px rgba(0, 40, 90, .14);
+}
+
+.list-search .form-control,
+.list-search .form-select {
+   border: 1px solid #dce3e8;
+   border-radius: 2px;
+   color: #555;
+}
+
+.list-search .btn-brand {
+   border-radius: 2px;
+}
+
+.more-row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+   margin-top: .5rem;
+}
+
+.more-toggle {
+   border: 0;
+   background: none;
+   color: var(--blue);
+   font-weight: 500;
+   font-size: .85rem;
+   padding: .2rem 0;
+   cursor: pointer;
+   display: inline-flex;
+   align-items: center;
+   gap: .4rem;
+}
+
+.more-toggle:hover {
+   color: var(--teal-dark);
+}
+
+.more-count {
+   background: var(--blue);
+   color: #fff;
+   font-size: .7rem;
+   min-width: 20px;
+   height: 20px;
+   border-radius: 10px;
+   display: inline-grid;
+   place-items: center;
+   padding: 0 .35rem;
+}
+
+.more-count[hidden] {
+   display: none;
+}
+
+#lReset {
+   font-size: .8rem;
+   color: var(--teal-dark);
+}
+
+.more-body {
+   display: grid;
+   gap: 1rem;
+   padding: 1rem 0 .4rem;
+   border-top: 1px solid var(--line);
+   margin-top: .6rem;
+}
+
+.more-body h3 {
+   font-family: 'Roboto', sans-serif;
+   font-size: .8rem;
+   font-weight: 500;
+   color: #4a5160;
+   margin: 0 0 .4rem;
+   text-transform: uppercase;
+   letter-spacing: .05em;
+}
+
+.chips {
+   display: flex;
+   flex-wrap: wrap;
+   gap: .4rem;
+}
+
+.chip {
+   border: 1px solid #cfd8de;
+   background: #fff;
+   border-radius: 20px;
+   padding: .2rem .85rem;
+   font-size: .85rem;
+   color: #4a5160;
+   cursor: pointer;
+   transition: all .15s;
+}
+
+.chip:hover {
+   border-color: var(--blue);
+}
+
+.chip.active {
+   background: var(--blue);
+   border-color: var(--blue);
+   color: #fff;
+}
+
+.lf-feats {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+   gap: .2rem 1rem;
+}
+
+.lf-feats .form-check {
+   font-size: .88rem;
+   margin: 0;
+}
+
+.lf-feats .form-check-input:checked {
+   background-color: var(--blue);
+   border-color: var(--blue);
+}
+
+/* ===== Resultados ===== */
+.list-results {
+   padding: 2.2rem 12px 1rem;
+}
+
+.lr-head {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+   margin-bottom: 1.5rem;
+}
+
+.lr-count {
+   font-size: 1.15rem;
+   font-style: italic;
+   letter-spacing: .06em;
+   font-weight: 600;
+   color: #4a4f5a;
+   margin: 0;
+}
+
+.lr-order {
+   display: flex;
+   align-items: center;
+   gap: .6rem;
+}
+
+.lr-order label {
+   font-size: .8rem;
+   letter-spacing: .1em;
+   text-transform: uppercase;
+   font-weight: 600;
+   color: #4a4f5a;
+   margin: 0;
+}
+
+.lr-order select {
+   width: auto;
+   border-radius: 2px;
+}
+
+.lpager {
+   list-style: none;
+   padding: 0;
+   margin: 2.2rem 0 0;
+   display: flex;
+   justify-content: flex-end;
+   flex-wrap: wrap;
+   gap: .4rem;
+}
+
+.lpager button {
+   min-width: 36px;
+   height: 36px;
+   padding: 0 .7rem;
+   border: 2px solid var(--teal);
+   border-radius: 3px;
+   background: var(--teal);
+   color: #fff;
+   font-weight: 500;
+   font-size: .9rem;
+   cursor: pointer;
+   transition: background .15s;
+}
+
+.lpager button:hover {
+   background: var(--teal-dark);
+   border-color: var(--teal-dark);
+}
+
+.lpager button[aria-current="page"] {
+   background: #fff;
+   color: var(--teal-dark);
+}
+
+@media (max-width: 575px) {
+   .lpager {
+      justify-content: center;
+   }
+}
+
+.l-empty {
+   text-align: center;
+   padding: 3.5rem 1rem;
+   color: var(--muted);
+}
+
+.l-empty i {
+   font-size: 3rem;
+   color: var(--teal);
+}
+
+.l-empty h3 {
+   font-size: 1.2rem;
+   color: var(--ink);
+   margin-top: .6rem;
+}
+
+/* ===== Texto SEO ===== */
+.seo {
+   padding: 3rem 0 5rem;
+   background: #fff;
+}
+
+.seo .container {
+   max-width: 1010px;
+}
+
+.seo h1 {
+   font-size: clamp(2.3rem, 5.5vw, 3.8rem);
+   font-weight: 600;
+   line-height: 1.15;
+   color: var(--blue);
+   margin-bottom: 1.6rem;
+}
+
+.seo h2 {
+   font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+   font-weight: 600;
+   line-height: 1.25;
+   color: var(--blue);
+   margin: 2.6rem 0 1rem;
+}
+
+.seo h3 {
+   font-family: 'Roboto', sans-serif;
+   font-size: .95rem;
+   font-weight: 700;
+   color: #1f2430;
+   margin: 1.4rem 0 .4rem;
+}
+
+.seo p {
+   font-size: .92rem;
+   line-height: 1.95;
+   color: #2f3445;
+   max-width: 100ch;
+   margin-bottom: .9rem;
+}
+
+/* ===== Preguntas frecuentes ===== */
+.faq {
+   margin-top: 1.4rem;
+}
+
+.faq details {
+   border: 1px solid #dfe5ea;
+   margin-top: -1px;
+   background: #fff;
+}
+
+.faq summary {
+   list-style: none;
+   cursor: pointer;
+   padding: .8rem 1rem;
+   font-size: .85rem;
+   font-weight: 700;
+   color: #0b4a9b;
+   display: flex;
+   align-items: center;
+   gap: .7rem;
+}
+
+.faq summary::-webkit-details-marker {
+   display: none;
+}
+
+.faq summary::before {
+   content: "+";
+   font-size: 1.15rem;
+   font-weight: 700;
+   line-height: 1;
+   width: 1rem;
+   text-align: center;
+}
+
+.faq summary:hover {
+   background: var(--blue-soft);
+}
+
+.faq details[open] summary {
+   color: var(--teal-dark);
+}
+
+.faq details[open] summary::before {
+   content: "\2212";
+}
+
+.faq-body {
+   padding: .3rem 1.2rem 1.1rem 2.7rem;
+}
+
+.faq-body p {
+   font-size: .85rem;
+   line-height: 1.8;
+   margin: 0;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casas, pisos y chalets en venta en Requena | Inmobiliaria Requena</title>
+  <meta name="description" content="Casas, pisos, áticos, chalets, fincas y locales en venta en Requena y su comarca. Te acompañamos en todo el proceso de compra.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/listado.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué documentación necesito para comprar una casa en Requena?", "acceptedAnswer": {"@type": "Answer", "text": "Necesitarás DNI o NIE y, si vas a financiar la compra, justificantes de ingresos. Una vez elegida la vivienda se firma un contrato de arras con una señal. Nosotros revisamos el resto de documentación del inmueble (nota simple, cargas, certificado energético, etc.)."}}, {"@type": "Question", "name": "¿Qué gastos hay además del precio de la vivienda?", "acceptedAnswer": {"@type": "Answer", "text": "Además del precio hay que contar con los impuestos que correspondan según el tipo de vivienda (nueva o de segunda mano), la notaría, el registro de la propiedad y, si procede, la gestoría y la tasación. Te preparamos un cálculo estimado antes de que tomes la decisión."}}, {"@type": "Question", "name": "¿Me pueden ayudar con la hipoteca?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Analizamos tu situación y te orientamos para encontrar la financiación que mejor se adapte a ti. Puedes ver más en nuestra sección de Asesoramiento Financiero."}}, {"@type": "Question", "name": "¿Cuánto se tarda en completar una compra?", "acceptedAnswer": {"@type": "Answer", "text": "Depende de cada caso: si compras al contado, puede cerrarse en pocas semanas; si hay hipoteca, suele alargarse por la tasación y la aprobación del banco. Te damos un calendario realista desde el principio."}}, {"@type": "Question", "name": "¿Puedo negociar el precio?", "acceptedAnswer": {"@type": "Answer", "text": "Siempre se puede hablar. Te informamos del precio de mercado de la zona y trasladamos tu oferta al propietario. También puedes usar el botón «Hacer una oferta» que aparece en la ficha de cada propiedad."}}, {"@type": "Question", "name": "¿Puedo visitar varias casas antes de decidir?", "acceptedAnswer": {"@type": "Answer", "text": "Por supuesto. Puedes visitar todas las que quieras: agrupamos las visitas para que no pierdas tiempo y, en muchas propiedades, puedes ver antes el tour virtual."}}]}</script>
+</head>
+<body data-page="venta" data-op="venta">
+
+  <div id="site-header"></div>
+
+  <div class="list-hero hero-venta" role="img" aria-label="Nuestra oficina"></div>
+
+  <main>
+    <!-- Buscador -->
+    <div class="container list-search-wrap">
+      <form class="list-search" id="listSearch" autocomplete="off">
+        <div class="row g-2">
+          <div class="col-md-4"><select class="form-select" id="lPoblacion" aria-label="Población"><option value="">Población</option></select></div>
+          <div class="col-md-4"><select class="form-select" id="lZona" aria-label="Zona"><option value="">Zona</option></select></div>
+          <div class="col-md-4"><select class="form-select" id="lTipo" aria-label="Tipo"><option value="">Tipo</option></select></div>
+          <div class="col-6 col-md-3"><input type="number" min="0" class="form-control" id="lDesde" placeholder="Desde €" aria-label="Precio desde"></div>
+          <div class="col-6 col-md-3"><input type="number" min="0" class="form-control" id="lHasta" placeholder="Hasta €" aria-label="Precio hasta"></div>
+          <div class="col-md-3"><input type="text" class="form-control" id="lRef" placeholder="Ref" aria-label="Referencia"></div>
+          <div class="col-md-3 d-grid"><button type="submit" class="btn btn-brand">Buscar</button></div>
+        </div>
+
+        <div class="more-row">
+          <button type="button" class="more-toggle" data-bs-toggle="collapse" data-bs-target="#moreFilters" aria-expanded="false" aria-controls="moreFilters">
+            <i class="bi bi-sliders"></i> Más filtros <span class="more-count" id="moreCount" hidden>0</span>
+          </button>
+          <button type="button" class="btn btn-link p-0" id="lReset" hidden>Borrar filtros</button>
+        </div>
+
+        <div class="collapse" id="moreFilters">
+          <div class="more-body">
+            <div>
+              <h3>Habitaciones</h3>
+              <div class="chips" data-chips="beds">
+                <button type="button" class="chip active" data-val="0">Todas</button>
+                <button type="button" class="chip" data-val="1">1+</button>
+                <button type="button" class="chip" data-val="2">2+</button>
+                <button type="button" class="chip" data-val="3">3+</button>
+                <button type="button" class="chip" data-val="4">4+</button>
+              </div>
+            </div>
+            <div>
+              <h3>Baños</h3>
+              <div class="chips" data-chips="baths">
+                <button type="button" class="chip active" data-val="0">Todos</button>
+                <button type="button" class="chip" data-val="1">1+</button>
+                <button type="button" class="chip" data-val="2">2+</button>
+                <button type="button" class="chip" data-val="3">3+</button>
+              </div>
+            </div>
+            <div>
+              <h3>Características</h3>
+              <div class="lf-feats" id="lFeats"></div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Resultados -->
+    <section class="container list-results" id="resultsTop" aria-labelledby="lCount">
+      <div class="lr-head">
+        <h2 class="lr-count" id="lCount">0 PROPIEDADES</h2>
+        <div class="lr-order">
+          <label for="lOrden">Ordenar por</label>
+          <select class="form-select" id="lOrden">
+            <option value="fecha-desc">Fecha – DESC</option>
+            <option value="fecha-asc">Fecha – ASC</option>
+            <option value="precio-asc">Precio – menor a mayor</option>
+            <option value="precio-desc">Precio – mayor a menor</option>
+            <option value="m2-desc">Superficie – mayor a menor</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row g-4" id="lGrid" aria-live="polite"></div>
+
+      <div class="l-empty d-none" id="lEmpty">
+        <i class="bi bi-house-slash"></i>
+        <h3>No hay propiedades con esos filtros</h3>
+        <p>Prueba a quitar alguna característica o ampliar el rango de precio.</p>
+        <button type="button" class="btn btn-brand" id="lEmptyReset">Borrar filtros</button>
+      </div>
+
+      <nav aria-label="Paginación"><ul class="lpager" id="lPager"></ul></nav>
+    </section>
+
+    <!-- Texto informativo -->
+    <section class="seo">
+      <div class="container">
+        <h1>Casa en venta en Requena</h1>
+        <p>Comprar una casa es una de las decisiones más importantes de la vida, y debería hacerse con información clara y sin prisas. Ya busques tu primera vivienda, más espacio para tu familia o una inversión, en <strong>Inmobiliaria Requena</strong> te acompañamos en todo el proceso: desde la <strong>primera visita</strong> hasta la <strong>firma ante notario</strong>.</p>
+
+        <h2>Viviendas en venta</h2>
+        <p>Nuestra cartera de <strong>casas en venta en Requena</strong> incluye pisos, áticos, chalets, casas de pueblo, fincas rústicas y locales de la localidad y su comarca. Revisamos cada propiedad antes de publicarla para que lo que ves en el anuncio coincida con lo que encuentras en la visita.</p>
+        <h3>Para vivir, para invertir o para disfrutar</h3>
+        <p>Tenemos desde pisos reformados en el centro hasta chalets con piscina, casas de pueblo con patio y fincas con viñedo. Usa los filtros de zona, precio y características (piscina, paellero, garaje, aire acondicionado…) para encontrar la tuya.</p>
+
+        <h2>Comprar con tranquilidad y con todo el proceso resuelto</h2>
+        <p>Comprar no es solo elegir casa. <strong>Revisamos la documentación</strong>, te explicamos los gastos de la operación y coordinamos con notaría y entidades financieras para que no tengas que ocuparte de nada.</p>
+        <p>Si buscas una <strong>casa en venta en Requena</strong> en la que echar raíces, aquí encontrarás viviendas pensadas para eso: buen estado, entorno agradable y una relación calidad-precio ajustada al mercado local.</p>
+        <h3>Asesoramiento financiero y legal</h3>
+        <p>Te ayudamos a valorar tu capacidad de compra, comparar opciones de financiación y revisar la nota simple, las cargas y las escrituras antes de firmar.</p>
+        <h3>Trato cercano y respuesta rápida</h3>
+        <p>Respondemos en menos de 24 horas, organizamos visitas reales o virtuales según disponibilidad y te informamos con total transparencia en cada paso.</p>
+
+        <h2>Preguntas frecuentes sobre la compra de vivienda en Requena</h2>
+        <div class="faq">
+          <details name="faq" open>
+            <summary>¿Qué documentación necesito para comprar una casa en Requena?</summary>
+            <div class="faq-body"><p>Necesitarás DNI o NIE y, si vas a financiar la compra, justificantes de ingresos. Una vez elegida la vivienda se firma un contrato de arras con una señal. Nosotros revisamos el resto de documentación del inmueble (nota simple, cargas, certificado energético, etc.).</p></div>
+          </details>
+          <details name="faq">
+            <summary>¿Qué gastos hay además del precio de la vivienda?</summary>
+            <div class="faq-body"><p>Además del precio hay que contar con los impuestos que correspondan según el tipo de vivienda (nueva o de segunda mano), la notaría, el registro de la propiedad y, si procede, la gestoría y la tasación. Te preparamos un cálculo estimado antes de que tomes la decisión.</p></div>
+          </details>
+          <details name="faq">
+            <summary>¿Me pueden ayudar con la hipoteca?</summary>
+            <div class="faq-body"><p>Sí. Analizamos tu situación y te orientamos para encontrar la financiación que mejor se adapte a ti. Puedes ver más en nuestra sección de <a href="servicios.html#financiero">Asesoramiento Financiero</a>.</p></div>
+          </details>
+          <details name="faq">
+            <summary>¿Cuánto se tarda en completar una compra?</summary>
+            <div class="faq-body"><p>Depende de cada caso: si compras al contado, puede cerrarse en pocas semanas; si hay hipoteca, suele alargarse por la tasación y la aprobación del banco. Te damos un calendario realista desde el principio.</p></div>
+          </details>
+          <details name="faq">
+            <summary>¿Puedo negociar el precio?</summary>
+            <div class="faq-body"><p>Siempre se puede hablar. Te informamos del precio de mercado de la zona y trasladamos tu oferta al propietario. También puedes usar el botón «Hacer una oferta» que aparece en la ficha de cada propiedad.</p></div>
+          </details>
+          <details name="faq">
+            <summary>¿Puedo visitar varias casas antes de decidir?</summary>
+            <div class="faq-body"><p>Por supuesto. Puedes visitar todas las que quieras: agrupamos las visitas para que no pierdas tiempo y, en muchas propiedades, puedes ver antes el tour virtual.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/propiedades.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/listado.js"></script>
+</body>
+</html>

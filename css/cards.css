@@ -1,0 +1,183 @@
+/* cards.css - tarjeta de propiedad (index, venta y alquiler) */
+
+.prop-card {
+    background: #fff;
+    border: 1px solid #edf0f2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow .2s ease;
+}
+
+.prop-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 40, 90, .12);
+}
+
+.prop-media {
+    position: relative;
+    margin: .6rem .6rem 0;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #dfe6ea;
+}
+
+.prop-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prop-media-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.prop-ref {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #9ccdd3;
+    color: #234;
+    font-size: .75rem;
+    padding: .2rem .7rem;
+}
+
+.prop-badges {
+    position: absolute;
+    top: .6rem;
+    left: .6rem;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.prop-badge {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(20, 30, 50, .85);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: .75rem;
+    font-weight: 700;
+}
+
+.fav-btn {
+    position: absolute;
+    top: .6rem;
+    right: .6rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: rgba(0, 0, 0, .28);
+    color: #fff;
+    font-size: 1.1rem;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.fav-btn.on {
+    background: #e5384f;
+    border-color: #e5384f;
+}
+
+.op-tag {
+    position: absolute;
+    top: .6rem;
+    right: 3.4rem;
+    background: var(--blue);
+    color: #fff;
+    font-size: .7rem;
+    padding: .15rem .6rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.prop-body {
+    padding: 1.1rem 1.3rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.prop-type {
+    font-size: .9rem;
+    letter-spacing: .04em;
+    color: #333;
+    margin: 0;
+}
+
+.prop-zone {
+    font-size: .8rem;
+    color: var(--muted);
+    margin: .2rem 0 .5rem;
+}
+
+.prop-zone span {
+    color: var(--teal);
+}
+
+.prop-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--blue);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.25;
+    margin-bottom: .8rem;
+}
+
+.prop-title a {
+    color: inherit;
+}
+
+.prop-meta {
+    display: flex;
+    gap: .2rem;
+    font-size: .85rem;
+    color: #555;
+    margin-top: auto;
+    padding-bottom: .5rem;
+}
+
+.prop-meta span {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    border-right: 1px solid var(--line);
+}
+
+.prop-meta span:last-child {
+    border: 0;
+}
+
+.prop-meta i {
+    color: #6a7280;
+    font-size: 1.05rem;
+}
+
+.prop-price {
+    color: var(--teal);
+    font-weight: 700;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.prop-feats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3rem;
+    margin-bottom: .6rem;
+}
+
+.prop-feats small {
+    background: var(--blue-soft);
+    color: var(--blue);
+    border-radius: 20px;
+    padding: .05rem .6rem;
+    font-size: .72rem;
+}
